@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+body {
+  background-color: aquamarine;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav{
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Merriweather', serif;
+  position: sticky;
+  top:0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    height:65px;
+    background-color: black;
+    color:white;
+    align-items: center;
+    /* justify-content: center; */ 
+  }
+
+nav ul li a{
+    margin:0px 16px;
+}
+  
+  .logo{
+    display: flex;
+    align-items: center;
+    margin:32px;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-left: 8px;
+  }
+
+
+.logo img{
+  width:55px;
+  height: 55px;
+  margin:5px;
+  
+  /* margin-bottom: 10px; */
+}
+
+h1{
+  color:white;
+  padding: 16px;
+  margin-left:100px;
+}
+
+.container{
+  background: url(../media/bg2.jpg) no-repeat center center/cover;
+  min-height:76.5vh;
+  width:80vw;
+  margin: 20px auto;
+  display: flex;
+  border-radius: 12px;
+  
+}
+
+.song-item{
+    height:40px;
+    display: flex;
+    background-color: white;
+    width:400px;
+    align-items: center;
+    margin:12px;
+    justify-content: space-between;
+    border-radius:32px;
+    padding:0px 10px;
+
+}
+
+.song-item span{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.song-list{
+  margin:0px 60px;
+}
+
+.song-item .songlistplay span{
+  margin:12px 16px;
+  justify-content: center;
+  padding-bottom: 8px;
+}
+
+.song-item img{
+
+  height:30px;
+  width:30px;
+
+}
+
+#playbutton{
+  cursor: pointer;
+}
+
+.bottom{
+  background-color: orangered;
+  height:80px;
+  position: sticky;
+  bottom:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.icons{
+
+  margin-top:16px;
+  cursor: pointer;
+
+}
+
+#myProgressbar{
+  width:80vw;
+  cursor: pointer;
+
+}
+
+.songInfo{
+  position: absolute;
+  left: 9vw;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-top: 24px;
+  font-weight: bolder;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.songInfo img{
+  opacity: 0;
+}
